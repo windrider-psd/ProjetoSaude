@@ -1,12 +1,5 @@
 ﻿using ProjetoSaude.BLL;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProjetoSaude.Apresentacao
@@ -25,7 +18,7 @@ namespace ProjetoSaude.Apresentacao
                 AlimentoBLL.Cadastrar(txtNome.Text.Trim(), (int)calorias.Value, (int)quantidade.Value, medida.Text.Trim());
                 MessageBox.Show("Alimento cadastrado com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

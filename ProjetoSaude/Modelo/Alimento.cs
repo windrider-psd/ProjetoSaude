@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ProjetoSaude.Modelo
+﻿namespace ProjetoSaude.Modelo
 {
     public class Alimento
     {
-        private int id;
-        private string nome;
         private int calorias;
-        private int quantidade;
+        private int id;
         private string medida;
+        private string nome;
+        private int quantidade;
 
         public Alimento(int id, string nome, int calorias, int quantidade, string medida)
         {
@@ -23,11 +17,11 @@ namespace ProjetoSaude.Modelo
             this.Medida = medida;
         }
 
-        public int Id { get => id; private set => id = value; }
-        public string Nome { get => nome; set => nome = value; }
         public int Calorias { get => calorias; set => calorias = value; }
-        public int Quantidade { get => quantidade; set => quantidade = value; }
+        public int Id { get => id; private set => id = value; }
         public string Medida { get => medida; set => medida = value; }
+        public string Nome { get => nome; set => nome = value; }
+        public int Quantidade { get => quantidade; set => quantidade = value; }
 
         public override string ToString()
         {

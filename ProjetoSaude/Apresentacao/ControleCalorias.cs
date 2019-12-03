@@ -27,7 +27,7 @@ namespace ProjetoSaude.Apresentacao
 
         private void BtnAddAlimento_Click(object sender, EventArgs e)
         {
-            if(alimento.SelectedIndex != -1)
+            if (alimento.SelectedIndex != -1)
             {
                 Alimento alimento = GetAlimentoSelecionado();
 
@@ -36,19 +36,17 @@ namespace ProjetoSaude.Apresentacao
                 calculadoraCalorias.Refeicao.AdicionarAlimento(alimento, quantidade);
                 AtualizarResultado();
             }
-            
         }
 
         private void BtnAddExercicio_Click(object sender, EventArgs e)
         {
-            if(exercicio.SelectedIndex != -1 )
+            if (exercicio.SelectedIndex != -1)
             {
                 Exercicio exercicio = GetExercicioSelecionado();
                 int duracao = decimal.ToInt32((horasExercicio.Value));
                 calculadoraCalorias.AdicionarExercicio(exercicio, duracao);
                 AtualizarResultado();
             }
-            
         }
 
         private Alimento GetAlimentoSelecionado()

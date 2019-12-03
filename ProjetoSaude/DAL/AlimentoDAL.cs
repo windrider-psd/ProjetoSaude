@@ -1,35 +1,29 @@
 ﻿using ProjetoSaude.Modelo;
-using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProjetoSaude.DAL
 {
     public static class AlimentoDAL
     {
-        public static Alimento Inserir(string nome, int calorias, int quantitade, string medida)
+        public static void Editar(Alimento alimento)
         {
-
             SqlCommand cmd = new SqlCommand
             {
-                CommandText = "INSERT INTO alimento (nome, calorias, quantidade, medida) values (@n,@c,@q,@p);SELECT SCOPE_IDENTITY()"
+                CommandText = "UPDATE alimento set nome = @n, calorias = @c , quantidade = @q , medida = @m where id = @id"
             };
 
-            cmd.Parameters.AddWithValue("@n", nome);
-            cmd.Parameters.AddWithValue("@c", calorias);
-            cmd.Parameters.AddWithValue("@q", quantitade);
-            cmd.Parameters.AddWithValue("@p", medida);
+            cmd.Parameters.AddWithValue("@n", alimento.Nome);
+            cmd.Parameters.AddWithValue("@c", alimento.Calorias);
+            cmd.Parameters.AddWithValue("@q", alimento.Quantidade);
+            cmd.Parameters.AddWithValue("@m", alimento.Medida);
+            cmd.Parameters.AddWithValue("@id", alimento.Id);
 
             cmd.Connection = ConexaoFactory.GetConexao();
-            int id = decimal.ToInt32((decimal)cmd.ExecuteScalar());
-
+            cmd.ExecuteScalar();
             ConexaoFactory.Desconectar();
-
-            return new Alimento(id, nome, calorias, quantitade, medida);
         }
+
         public static HashSet<Alimento> Encontrar()
         {
             HashSet<Alimento> alimentos = new HashSet<Alimento>();
@@ -53,7 +47,6 @@ namespace ProjetoSaude.DAL
 
         public static Alimento Encontrar(string id)
         {
-           
             Alimento alimento;
 
             SqlCommand cmd = new SqlCommand
@@ -78,24 +71,24 @@ namespace ProjetoSaude.DAL
             return alimento;
         }
 
-
-        public static void Editar(Alimento alimento)
+        public static Alimento Inserir(string nome, int calorias, int quantitade, string medida)
         {
-
             SqlCommand cmd = new SqlCommand
             {
-                CommandText = "UPDATE alimento set nome = @n, calorias = @c , quantidade = @q , medida = @m where id = @id"
+                CommandText = "INSERT INTO alimento (nome, calorias, quantidade, medida) values (@n,@c,@q,@p);SELECT SCOPE_IDENTITY()"
             };
 
-            cmd.Parameters.AddWithValue("@n", alimento.Nome);
-            cmd.Parameters.AddWithValue("@c", alimento.Calorias);
-            cmd.Parameters.AddWithValue("@q", alimento.Quantidade);
-            cmd.Parameters.AddWithValue("@m", alimento.Medida);
-            cmd.Parameters.AddWithValue("@id", alimento.Id);
+            cmd.Parameters.AddWithValue("@n", nome);
+            cmd.Parameters.AddWithValue("@c", calorias);
+            cmd.Parameters.AddWithValue("@q", quantitade);
+            cmd.Parameters.AddWithValue("@p", medida);
 
             cmd.Connection = ConexaoFactory.GetConexao();
-            cmd.ExecuteScalar();
+            int id = decimal.ToInt32((decimal)cmd.ExecuteScalar());
+
             ConexaoFactory.Desconectar();
+
+            return new Alimento(id, nome, calorias, quantitade, medida);
         }
 
         public static void Remover(Alimento alimento)
@@ -117,5 +110,4 @@ namespace ProjetoSaude.DAL
             ConexaoFactory.Desconectar();
         }
     }
-
 }

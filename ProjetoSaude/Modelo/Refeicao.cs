@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProjetoSaude.Modelo
 {
     public class Refeicao
     {
+        private HashSet<Tuple<Alimento, int>> alimentos = new HashSet<Tuple<Alimento, int>>();
         private TipoRefeicao tipoRefeicao;
-        private HashSet<Tuple<Alimento, int>> alimentos = new HashSet<Tuple<Alimento, int>>(); //Tuple é alimento e quantidade
+        //Tuple é alimento e quantidade
 
         public Refeicao()
         {

@@ -8,6 +8,14 @@ namespace ProjetoSaude.Modelo
         private readonly List<Tuple<Exercicio, int>> listaExercicios = new List<Tuple<Exercicio, int>>(); //Turple do tipo de exercício e horas
         private readonly Refeicao refeicao = new Refeicao(); //Turple do tipo de exercício e horas
 
+        public int BalancoCaloricas
+        {
+            get
+            {
+                return CaloriasRefeicao - CaloriasExercicios;
+            }
+        }
+
         public int CaloriasExercicios
         {
             get
@@ -26,21 +34,12 @@ namespace ProjetoSaude.Modelo
             get
             {
                 int total = 0;
-    
-                foreach(Tuple<Alimento, int> alimento in refeicao.Alimentos)
+
+                foreach (Tuple<Alimento, int> alimento in refeicao.Alimentos)
                 {
                     total += alimento.Item1.Calorias * alimento.Item2;
                 }
                 return total;
-            }
-        }
-
-
-        public int BalancoCaloricas
-        {
-            get
-            {
-                return CaloriasRefeicao - CaloriasExercicios;
             }
         }
 
@@ -53,6 +52,5 @@ namespace ProjetoSaude.Modelo
             ListaExercicios.Add(tuple);
             return tuple;
         }
-        
     }
 }

@@ -1,10 +1,6 @@
 ﻿using ProjetoSaude.DAL;
 using ProjetoSaude.Modelo;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProjetoSaude.BLL
 {
@@ -12,9 +8,9 @@ namespace ProjetoSaude.BLL
     {
         public static Alimento Cadastrar(string nome, int calorias, int quantidade, string medida)
         {
-            if(calorias < 0)
+            if (calorias < 0)
             {
-                throw new Exception ("Calorias não pode ser menor que 0");
+                throw new Exception("Calorias não pode ser menor que 0");
             }
 
             if (quantidade < 0)
@@ -44,6 +40,5 @@ namespace ProjetoSaude.BLL
         {
             AlimentoDAL.Remover(id);
         }
-
     }
 }

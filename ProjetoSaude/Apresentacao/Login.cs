@@ -1,15 +1,5 @@
 ﻿using ProjetoSaude.BLL;
-using ProjetoSaude.DAL;
-using ProjetoSaude.Modelo;
-using ProjetoSaude.Util;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProjetoSaude.Apresentacao
@@ -20,7 +10,6 @@ namespace ProjetoSaude.Apresentacao
         {
             InitializeComponent();
         }
-
 
         private void btnCadastro_Click(object sender, EventArgs e)
         {
@@ -36,12 +25,10 @@ namespace ProjetoSaude.Apresentacao
                 BemVindo bv = new BemVindo();
                 bv.Show();
             }
-
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-           
         }
 
         private void btnSair_Click(object sender, EventArgs e)
