@@ -1,0 +1,4 @@
+create table usuario (id INT PRIMARY KEY IDENTITY (1,1),  nome varchar(128), cpf VARCHAR(12) UNIQUE NOT NULL, rg varchar(14) UNIQUE NOT NULL, senha varchar(64) NOT NULL, status INT NOT NULL, perfil INT NOT NULL);
+
+
+create table alimento (id INT PRIMARY KEY IDENTITY (1, 1), nome varchar(128) NOT NULL, calorias INT NOT NULL, quantidade INT NOT NULL, medida varchar(64);

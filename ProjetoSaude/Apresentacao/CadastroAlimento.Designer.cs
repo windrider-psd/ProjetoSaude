@@ -49,7 +49,6 @@
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Nome";
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // txtNome
             // 
@@ -64,7 +63,6 @@
             this.calorias.Name = "calorias";
             this.calorias.Size = new System.Drawing.Size(226, 20);
             this.calorias.TabIndex = 3;
-            this.calorias.ValueChanged += new System.EventHandler(this.NumericUpDown1_ValueChanged);
             // 
             // quantidade
             // 
@@ -98,7 +96,6 @@
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 7;
             this.label2.Text = "Calorias";
-            this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // label3
             // 
@@ -133,7 +130,7 @@
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label1);
             this.Name = "CadastroAlimento";
-            this.Text = "CadastroAlimento";
+            this.Text = "Cadastro de Alimento";
             ((System.ComponentModel.ISupportInitialize)(this.calorias)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quantidade)).EndInit();
             this.ResumeLayout(false);

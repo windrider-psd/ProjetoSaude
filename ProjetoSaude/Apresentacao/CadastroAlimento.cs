@@ -18,26 +18,6 @@ namespace ProjetoSaude.Apresentacao
             InitializeComponent();
         }
 
-        private void TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void NumericUpDown1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void BtnCadastrar_Click(object sender, EventArgs e)
         {
             try

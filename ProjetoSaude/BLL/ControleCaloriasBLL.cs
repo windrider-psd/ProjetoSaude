@@ -11,13 +11,6 @@ namespace ProjetoSaude.BLL
     public static class ControleCaloriasBLL
     {
 
-        public static void Exibir()
-        {
-            if(Armazenador.usuarioLogado != null)
-            {
-                ControleCalorias controleCalorias = new ControleCalorias();
-                controleCalorias.Show();
-            }
-        }
+      
     }
 }

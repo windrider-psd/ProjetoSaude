@@ -1,4 +1,5 @@
-﻿using ProjetoSaude.DAL;
+﻿using ProjetoSaude.BLL;
+using ProjetoSaude.DAL;
 using ProjetoSaude.Modelo;
 using ProjetoSaude.Util;
 using System;
@@ -20,10 +21,6 @@ namespace ProjetoSaude.Apresentacao
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnCadastro_Click(object sender, EventArgs e)
         {
@@ -35,11 +32,8 @@ namespace ProjetoSaude.Apresentacao
         {
             try
             {
-                Usuario usuario = UsuarioDAL.Login(txtCpf.Text.Trim(), txtSenha.Text);
-                Armazenador.usuarioLogado = usuario;
-                Console.WriteLine(usuario);
-
-                BemVindoAdmin bv = new BemVindoAdmin();
+                UsuarioBLL.Login(txtCpf.Text.Trim(), txtSenha.Text);
+                BemVindo bv = new BemVindo();
                 bv.Show();
             }
 
@@ -47,29 +41,6 @@ namespace ProjetoSaude.Apresentacao
             {
                 MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
-
-            /*Controle controle = new Controle();
-            controle.acessar(txtCpf.Text, txtSenha.Text);
-
-            if(controle.mensagem.Equals(""))
-            {
-                if (controle.tem)
-                {
-                    MessageBox.Show("Logado com sucesso", "Entrando", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    BemVindo bv = new BemVindo();
-                    bv.Show();
-                }
-                else
-                {
-                    MessageBox.Show("Login não encontrado, verifique o login e senha", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            else
-            {
-                MessageBox.Show(controle.mensagem);
-            }
-            */
            
         }
 

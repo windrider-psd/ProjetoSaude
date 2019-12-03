@@ -24,8 +24,8 @@ C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\Projeto
 C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.csproj.CoreCompileInputs.cache
 C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.exe
 C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.pdb
-C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.Apresentacao.BemVindoAdmin.resources
 C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.Apresentacao.CadastroAlimento.resources
 C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.Apresentacao.RemoverAlimento.resources
 C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.Apresentacao.ControleCalorias.resources
 C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.Apresentacao.EditarAlimento.resources
+C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.Apresentacao.BemVindo.resources

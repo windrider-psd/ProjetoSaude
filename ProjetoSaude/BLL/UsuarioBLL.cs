@@ -20,15 +20,21 @@ namespace ProjetoSaude.BLL
             Armazenador.usuarioLogado = usuario;
 
             return usuario;
-            if(perfil == 1)
-            {
-               //adm
-            }
-            else
-            {
-                //entrar normal
-            }
 
+        }
+
+        public static Usuario Login(string cpf, string senha)
+        {
+            Usuario usuario = UsuarioDAL.Login(cpf, senha);
+
+            Armazenador.usuarioLogado = usuario;
+
+            return usuario;
+        }
+
+        public static void Logout()
+        {
+            Armazenador.usuarioLogado = null;
         }
 
         public static void Sair()

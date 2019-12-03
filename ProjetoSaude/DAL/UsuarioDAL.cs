@@ -68,9 +68,6 @@ namespace ProjetoSaude.DAL
             cmd.Parameters.AddWithValue("@cpf", cpf);
             cmd.Parameters.AddWithValue("@senha", Encriptador.Sha256(senha));
 
-            Console.WriteLine(Encriptador.Sha256(senha));
-            Console.WriteLine(cpf);
-
 
             cmd.Connection = ConexaoFactory.GetConexao();
             SqlDataReader reader = cmd.ExecuteReader();

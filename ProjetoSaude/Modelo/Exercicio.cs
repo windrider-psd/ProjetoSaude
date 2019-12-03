@@ -20,10 +20,10 @@ namespace ProjetoSaude.Modelo
             Calorias = calorias;
         }
 
-        public static readonly Exercicio Natacao = new Exercicio(TipoExercicio.Natacao, 300);
-        public static readonly Exercicio Spinning = new Exercicio(TipoExercicio.Spinning, 300);
-        public static readonly Exercicio Corrida = new Exercicio(TipoExercicio.Corrida, 300);
-        public static readonly Exercicio Zumba = new Exercicio(TipoExercicio.Zumba, 300);
+        public static readonly Exercicio Natacao = new Exercicio(TipoExercicio.Natacao, 400);
+        public static readonly Exercicio Spinning = new Exercicio(TipoExercicio.Spinning, 600);
+        public static readonly Exercicio Corrida = new Exercicio(TipoExercicio.Corrida, 400);
+        public static readonly Exercicio Zumba = new Exercicio(TipoExercicio.Zumba, 500);
 
         public static readonly Dictionary<TipoExercicio, Exercicio> exercicios= new Dictionary<TipoExercicio, Exercicio>(){
             {TipoExercicio.Natacao, Natacao},

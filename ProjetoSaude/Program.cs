@@ -11,6 +11,12 @@ namespace ProjetoSaude
 {
     static class Program
     {
+
+        private static string nomePadrao = "Toyne";
+        private static string cpfPadrao = "51316975061";
+        private static string rgPadrao = "319991507";
+        private static string senhaPadrao = "123";
+
         /// <summary>
         /// Ponto de entrada principal para o aplicativo.
         /// </summary>
@@ -24,7 +30,7 @@ namespace ProjetoSaude
             Application.Run(new Login());
         }
 
-
+        //Cria um usuário administrador casa não houver um
         static Usuario CriarUsuarioPadrao()
         {
             HashSet<Usuario> usuarios = UsuarioDAL.EncontrarUsuarios();
@@ -36,7 +42,7 @@ namespace ProjetoSaude
                 }
             }
 
-            return UsuarioDAL.Inserir("Maicon", "01363228080", "2121364117", "123", 0, 1);
+            return UsuarioDAL.Inserir(nomePadrao, cpfPadrao, rgPadrao, senhaPadrao, 0, 1);
         }
     }
 }

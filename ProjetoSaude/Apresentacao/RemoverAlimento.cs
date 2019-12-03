@@ -20,11 +20,14 @@ namespace ProjetoSaude.Apresentacao
 
         private void BtnRemover_Click(object sender, EventArgs e)
         {
-            Alimento alimento = (Alimento) ((ItemCombo) selecaoAlimento.SelectedItem).Value;
-            AlimentoBLL.Remover(alimento.Id);
-            MessageBox.Show("Alimento excluido com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if(selecaoAlimento.SelectedIndex != -1)
+            {
+                Alimento alimento = (Alimento)((ItemCombo)selecaoAlimento.SelectedItem).Value;
+                AlimentoBLL.Remover(alimento.Id);
+                MessageBox.Show("Alimento excluido com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            AtualizarSet();
+                AtualizarSet();
+            }
         }
 
         private void AtualizarSet()

@@ -21,7 +21,7 @@ namespace ProjetoSaude.Modelo
             }
         }
 
-        public int CaloriasRefeicoes
+        public int CaloriasRefeicao
         {
             get
             {
@@ -40,7 +40,7 @@ namespace ProjetoSaude.Modelo
         {
             get
             {
-                return CaloriasExercicios - CaloriasRefeicoes;
+                return CaloriasRefeicao - CaloriasExercicios;
             }
         }
 
@@ -53,7 +53,6 @@ namespace ProjetoSaude.Modelo
             ListaExercicios.Add(tuple);
             return tuple;
         }
-
         
     }
 }

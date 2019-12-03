@@ -21,29 +21,34 @@ namespace ProjetoSaude.Apresentacao
         private void AtualizarResultado()
         {
             exercicioCalorias.Text = calculadoraCalorias.CaloriasExercicios.ToString() + " Calorias";
-            alimentoCalorias.Text = calculadoraCalorias.CaloriasExercicios.ToString() + " Calorias";
+            alimentoCalorias.Text = calculadoraCalorias.CaloriasRefeicao.ToString() + " Calorias";
             balancoCalorias.Text = calculadoraCalorias.BalancoCaloricas.ToString() + " Calorias";
         }
 
         private void BtnAddAlimento_Click(object sender, EventArgs e)
         {
-            Alimento alimento = GetAlimentoSelecionado();
+            if(alimento.SelectedIndex != -1)
+            {
+                Alimento alimento = GetAlimentoSelecionado();
 
-            int quantidade = decimal.ToInt32((quantidadeAlimento.Value));
+                int quantidade = decimal.ToInt32((quantidadeAlimento.Value));
 
-            calculadoraCalorias.Refeicao.AdicionarAlimento(alimento, quantidade);
-            AtualizarResultado();
+                calculadoraCalorias.Refeicao.AdicionarAlimento(alimento, quantidade);
+                AtualizarResultado();
+            }
+            
         }
 
         private void BtnAddExercicio_Click(object sender, EventArgs e)
         {
-            Exercicio exercicio = GetExercicioSelecionado();
-
-            int duracao = decimal.ToInt32((horasExercicio.Value));
-
-            calculadoraCalorias.AdicionarExercicio(exercicio, duracao);
-
-            AtualizarResultado();
+            if(exercicio.SelectedIndex != -1 )
+            {
+                Exercicio exercicio = GetExercicioSelecionado();
+                int duracao = decimal.ToInt32((horasExercicio.Value));
+                calculadoraCalorias.AdicionarExercicio(exercicio, duracao);
+                AtualizarResultado();
+            }
+            
         }
 
         private Alimento GetAlimentoSelecionado()
@@ -65,9 +70,9 @@ namespace ProjetoSaude.Apresentacao
         {
             HashSet<Alimento> alimentos = AlimentoDAL.Encontrar();
             int i = 0;
-            foreach (Alimento alimento in alimentos)
+            foreach (Alimento alimentovar in alimentos)
             {
-                exercicio.Items.Insert(i++, new ItemCombo(alimento.ToString(), alimento));
+                alimento.Items.Insert(i++, new ItemCombo(alimentovar.ToString(), alimentovar));
             }
         }
 

@@ -20,7 +20,7 @@ namespace ProjetoSaude.Modelo
             this.Nome = nome;
             this.Calorias = calorias;
             this.Quantidade = quantidade;
-            this.Medida = this.medida;
+            this.Medida = medida;
         }
 
         public int Id { get => id; private set => id = value; }
@@ -31,7 +31,7 @@ namespace ProjetoSaude.Modelo
 
         public override string ToString()
         {
-            return this.Nome + " " + this.Quantidade + " " + this.Medida;
+            return this.Nome + " " + this.Quantidade + " " + this.Medida + " (" + Calorias + " cal)";
         }
     }
 }
