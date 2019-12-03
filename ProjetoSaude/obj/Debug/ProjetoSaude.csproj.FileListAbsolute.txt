@@ -1,0 +1,31 @@
+C:\Users\Mango\Desktop\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\bin\Debug\ProjetoSaude.exe.config
+C:\Users\Mango\Desktop\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\bin\Debug\ProjetoSaude.exe
+C:\Users\Mango\Desktop\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\bin\Debug\ProjetoSaude.pdb
+C:\Users\Mango\Desktop\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.csprojAssemblyReference.cache
+C:\Users\Mango\Desktop\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.Apresentacao.Cadastro.resources
+C:\Users\Mango\Desktop\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.Apresentacao.Login.resources
+C:\Users\Mango\Desktop\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.Form1.resources
+C:\Users\Mango\Desktop\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.Properties.Resources.resources
+C:\Users\Mango\Desktop\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.csproj.GenerateResource.cache
+C:\Users\Mango\Desktop\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.exe
+C:\Users\Mango\Desktop\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.pdb
+C:\Users\Mango\Desktop\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.Apresentacao.BemVindo.resources
+C:\Users\Mango\Desktop\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.Apresentacao.CalculaImc.resources
+C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\bin\Debug\ProjetoSaude.exe.config
+C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\bin\Debug\ProjetoSaude.exe
+C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\bin\Debug\ProjetoSaude.pdb
+C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.csprojAssemblyReference.cache
+C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.Apresentacao.Cadastro.resources
+C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.Apresentacao.CalculaImc.resources
+C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.Apresentacao.Login.resources
+C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.Form1.resources
+C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.Properties.Resources.resources
+C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.csproj.GenerateResource.cache
+C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.csproj.CoreCompileInputs.cache
+C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.exe
+C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.pdb
+C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.Apresentacao.BemVindoAdmin.resources
+C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.Apresentacao.CadastroAlimento.resources
+C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.Apresentacao.RemoverAlimento.resources
+C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.Apresentacao.ControleCalorias.resources
+C:\Users\Christian Lemos\Downloads\ProjetoIntegrado_v06\ProjetoIntegrado\ProjetoSaude\ProjetoSaude\obj\Debug\ProjetoSaude.Apresentacao.EditarAlimento.resources
